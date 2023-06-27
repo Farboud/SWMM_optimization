@@ -290,6 +290,7 @@ def swmm(lid):
     # Antifragility
     delta_c = antifragility(p0)
 
+    #Change the output of the function between delta_c or reliability as needed.
     return delta_c[-2]
 
 def constraint(x):
@@ -337,7 +338,6 @@ print("Runtime:", current_time)
 
 # Print the optimized variables and the corresponding minimum value of F
 print("Optimized variables:", result.x)
-print("Minimum value of F:", result.fun)
 ##############################
 ##############################
 ##############################
